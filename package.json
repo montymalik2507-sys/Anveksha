@@ -1,0 +1,26 @@
+{
+  "name": "anveksha",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ANVEKSHA: Beyond Accuracy. Across Population. Medical AI Reliability Assessment Platform",
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": ".\\venv\\Scripts\\python -m uvicorn backend.main:app --reload --port 8000",
+    "dev": "npm --prefix frontend run dev",
+    "start:backend": ".\\venv\\Scripts\\python -m uvicorn backend.main:app --reload --port 8000",
+    "build": "npm --prefix frontend run build",
+    "test:frontend": "npm --prefix frontend test",
+    "test:backend": ".\\venv\\Scripts\\python -m pytest backend/tests",
+    "test": "npm --prefix frontend test && npm run test:backend"
+  },
+  "keywords": [
+    "medical-ai",
+    "reliability",
+    "domain-shift",
+    "chest-xray",
+    "evaluation",
+    "anveksha"
+  ],
+  "author": "IndiHealth AI Team",
+  "license": "Apache-2.0"
+}

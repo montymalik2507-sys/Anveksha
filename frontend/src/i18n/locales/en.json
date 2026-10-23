@@ -1,0 +1,83 @@
+{
+  "app": {
+    "name": "ANVEKSHA",
+    "tagline_part1": "Beyond Accuracy.",
+    "tagline_part2": "Across Population.",
+    "research_disclaimer": "Research evaluation. Not clinically validated."
+  },
+  "nav": {
+    "home": "Home",
+    "new_test": "New test",
+    "results": "Results",
+    "history": "History",
+    "learn": "Learn",
+    "settings": "Settings",
+    "library": "Library"
+  },
+  "status": {
+    "pass": "Pass",
+    "warning": "Warning",
+    "fail": "Fail",
+    "not_verified": "Not verified"
+  },
+  "demo": {
+    "banner": "Demo data. Numbers on this screen are examples, not an actual evaluation."
+  },
+  "steps": {
+    "step_1": "Add data",
+    "step_2": "Describe datasets",
+    "step_3": "Check data",
+    "step_4": "Compatibility",
+    "step_5": "Check model",
+    "step_6": "Running",
+    "step_7": "Results"
+  },
+  "home": {
+    "headline": "Does your medical AI work on Indian data?",
+    "subheadline": "A research tool that tests whether an existing medical AI model still performs reliably when tested on data from Indian healthcare settings.",
+    "start_test": "Start a new test",
+    "see_example": "See an example result",
+    "trust_statement": "If the data is not clean, ANVEKSHA says so. It never guesses.",
+    "step1_title": "Add your data",
+    "step1_desc": "Upload chest X-ray pictures, label tables, and your model.",
+    "step2_title": "We check the data",
+    "step2_desc": "Rigorous quality, integrity, and compatibility checks before any run.",
+    "step3_title": "See the result",
+    "step3_desc": "Detailed statistical comparisons with confidence intervals and clear reports."
+  },
+  "metrics": {
+    "overall_correct": "Overall correct",
+    "accuracy": "Accuracy",
+    "finds_sick": "Finds sick patients",
+    "sensitivity": "Sensitivity",
+    "clears_healthy": "Clears healthy patients",
+    "specificity": "Specificity",
+    "precision": "Precision",
+    "f1_score": "F1 Score",
+    "foreign_data": "Foreign data",
+    "indian_data": "Indian data",
+    "dataset_a": "Dataset A",
+    "dataset_b": "Dataset B"
+  },
+  "view_mode": {
+    "simple": "Simple",
+    "detailed": "Detailed"
+  },
+  "buttons": {
+    "continue": "Continue",
+    "back": "Back",
+    "cancel": "Cancel",
+    "resume": "Resume",
+    "recheck": "Re-check",
+    "download_report": "Download report",
+    "run_another": "Run another test",
+    "remove_bad": "Remove bad pictures and re-check",
+    "upload_fixed": "Upload fixed data",
+    "download_issues": "Download issue list",
+    "save": "Save changes",
+    "reset": "Reset"
+  },
+  "common": {
+    "partly_translated": "Partly translated. Falling back to English for missing phrases."
+  }
+}

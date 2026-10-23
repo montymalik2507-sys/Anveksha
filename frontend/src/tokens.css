@@ -1,0 +1,135 @@
+/* ANVEKSHA Design System Tokens (AGENTS.md Section 4) */
+
+:root {
+  /* Default: Dark Theme */
+  --bg: #07121F;
+  --card: #0E2035;
+  --text: #EAF3F8;
+  --text-2: #BCCDDA;
+  --muted: #93A9BA;
+  --line: #1E3753;
+  --line-2: #193048;
+  --line-3: #4B6A86;
+  --header: #0F2B4A;
+  --accent-teal: #3EF0DC;
+  --accent-blue: #5AA9FF;
+  --accent-saffron: #F28C1E;
+  --btn-text: #06202B;
+
+  --success-bg: #0F4A3F;
+  --success-text: #8FF3D8;
+  --warning-bg: #5A3A0B;
+  --warning-text: #FFD08A;
+  --error-bg: #5A1D1A;
+  --error-text: #FFC2BB;
+  --error-line: #F0786E;
+  --neutral-bg: #1A2838;
+  --neutral-text: #93A9BA;
+
+  /* Glow opacities (12-16%) */
+  --glow-teal: rgba(62, 240, 220, 0.14);
+  --glow-saffron: rgba(242, 140, 30, 0.14);
+  --glow-blue: rgba(90, 169, 255, 0.14);
+  --hero-blend: rgba(14, 32, 53, 0.84);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 16px rgba(62, 240, 220, 0.28);
+  --shadow-glow-saffron: 0 0 16px rgba(242, 140, 30, 0.28);
+
+  /* Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 15px;
+  --line-height-base: 1.5;
+
+  /* Motion */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 1100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Tokens */
+[data-theme="light"] {
+  --bg: #F4F8FA;
+  --card: #FFFFFF;
+  --text: #0D2038;
+  --text-2: #2E4256;
+  --muted: #4B6073;
+  --line: #D3DEE6;
+  --line-2: #E4ECF1;
+  --line-3: #93A7B6;
+  --header: #0D2038;
+  --accent-teal: #0B7F76;
+  --accent-blue: #1D5FA8;
+  --accent-saffron: #D97706;
+  --btn-text: #FFFFFF;
+
+  --success-bg: #CFF1E6;
+  --success-text: #0A4A38;
+  --warning-bg: #FDE2B5;
+  --warning-text: #6B3D00;
+  --error-bg: #FAD4D0;
+  --error-text: #7A1810;
+  --error-line: #B3261E;
+  --neutral-bg: #EAEFF2;
+  --neutral-text: #4B6073;
+
+  /* Glow opacities in light mode */
+  --glow-teal: rgba(11, 127, 118, 0.08);
+  --glow-saffron: rgba(217, 119, 6, 0.08);
+  --glow-blue: rgba(29, 95, 168, 0.08);
+  --hero-blend: rgba(255, 255, 255, 0.88);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 3px rgba(13, 32, 56, 0.06);
+  --shadow-md: 0 4px 14px rgba(13, 32, 56, 0.08);
+  --shadow-lg: 0 10px 25px rgba(13, 32, 56, 0.12);
+  --shadow-glow: 0 0 16px rgba(11, 127, 118, 0.18);
+  --shadow-glow-saffron: 0 0 16px rgba(217, 119, 6, 0.18);
+}
+
+/* Accessibility: Text Size */
+[data-text-size="large"] {
+  --font-size-base: 17px;
+}
+
+[data-text-size="extra-large"] {
+  --font-size-base: 19px;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+[data-reduce-motion="true"] *,
+[data-reduce-motion="true"] *::before,
+[data-reduce-motion="true"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

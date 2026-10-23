@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" role="img" aria-label="ANVEKSHA logo">
+  <defs>
+    <!-- Background navy hexagon gradient -->
+    <linearGradient id="navyHexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15365A" />
+      <stop offset="100%" stop-color="#0A1828" />
+    </linearGradient>
+    <!-- Border subtle glow -->
+    <linearGradient id="hexBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3EF0DC" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#5AA9FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#F28C1E" stop-opacity="0.6" />
+    </linearGradient>
+    <!-- Teal A leg gradient -->
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3EF0DC" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+    <!-- Saffron A leg gradient -->
+    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28C1E" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Navy Hexagon (center 100, 100; radius ~88) -->
+  <!-- Hexagon points: (100, 14), (176, 58), (176, 142), (100, 186), (24, 142), (24, 58) -->
+  <polygon points="100,12 178,57 178,143 100,188 22,143 22,57"
+           fill="url(#navyHexGrad)"
+           stroke="url(#hexBorderGrad)"
+           stroke-width="3"
+           stroke-linejoin="round" />
+
+  <!-- Inner subtle Hexagon line -->
+  <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+           fill="none"
+           stroke="#1E3E65"
+           stroke-width="1.5"
+           stroke-opacity="0.4"
+           stroke-linejoin="round" />
+
+  <!-- Left leg of "A" in vibrant Teal -->
+  <path d="M 62 148 L 94 52 L 102 52 L 80 148 Z"
+        fill="url(#tealGrad)" />
+
+  <!-- Right leg of "A" in vibrant Saffron / Orange -->
+  <path d="M 98 52 L 106 52 L 138 148 L 120 148 L 100 84 Z"
+        fill="url(#saffronGrad)" />
+
+  <!-- Peak joint of A -->
+  <polygon points="94,52 106,52 100,40" fill="#3EF0DC" />
+
+  <!-- Medical Pulse / ECG Line traversing horizontally through the A crossbar -->
+  <path d="M 44 116 L 72 116 L 82 128 L 96 78 L 108 136 L 118 108 L 126 116 L 156 116"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="4.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#softGlow)" />
+
+  <!-- Two small data / comparison bars at bottom center -->
+  <rect x="88" y="156" width="9" height="18" rx="2" fill="#3EF0DC" opacity="0.9" />
+  <rect x="103" y="150" width="9" height="24" rx="2" fill="#F28C1E" opacity="0.9" />
+</svg>
